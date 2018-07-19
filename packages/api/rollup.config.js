@@ -7,11 +7,11 @@ import pkg from './package.json'
 const external = id => !id.startsWith('src') &&!id.startsWith('\0') && !id.startsWith('.') && !id.startsWith('/')
 
 export default {
-  input: 'src/index.js',
+  input: 'src/app.js',
   output: [{
     format: 'cjs',
     exports: 'named',
-    file: 'dist/index.js'
+    file: 'dist/app.js'
   }],
   external,
   plugins: [
